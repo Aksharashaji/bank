@@ -1,0 +1,15 @@
+ng new projectname --create a project
+ng serve -- open  --- run project
+ng g c  component-name --- create component
+
+                         Basic component
+
+# module - to import libraries , root module - AppModule
+# componet - to generate ts,html,css, root component - AppComponent 
+# Data Binding - sharing datawithin a component
+         1. one way binding - only single directional sharing
+                  a.component (ts file) to view (html file)
+                         -- string interpolation - {{variable-name}}
+                         -- property binding - [tag-attribute]="class-property"
+                  b.view to component
+                         --event binding - (event-name)="function-call"
