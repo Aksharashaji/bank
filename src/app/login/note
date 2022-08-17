@@ -13,3 +13,4 @@ ng g c  component-name --- create component
                          -- property binding - [tag-attribute]="class-property"
                   b.view to component
                          --event binding - (event-name)="function-call"
+                         ---

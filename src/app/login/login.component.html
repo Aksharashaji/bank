@@ -7,14 +7,14 @@
             <form action="" class="border m-5 p-5">
                 <div class="m-3">
                     <!-- acno -->
-                    <input (change)="acnoChange($event)" class="form-control" type="text" [placeholder]="accPlaceholder">
+                    <input #acno class="form-control" type="text" [placeholder]="accPlaceholder">
                 </div>
                 <div class="m-3">
                     <!-- password -->
-                    <input (change)="pswdChange($event)" class="form-control" type="password">
+                    <input #pswd class="form-control" type="password">
                 </div>
                 <div class="m-3">
-                    <input  (click)="login()" class="btn btn-primary" type="button" value="login" name="" id="loginBtn">
+                    <input  (click)="login(acno,pswd)" class="btn btn-primary" type="button" value="login" name="" id="loginBtn">
                 </div>
             </form>
             <div>

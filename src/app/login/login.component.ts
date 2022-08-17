@@ -41,12 +41,41 @@ pswdChange(event:any){
 
 }
 
-login(){
+// login(){
+  
+//   //fetch acno
+//   var acno = this.acno
+//   console.log(acno);
+// var pswd=this.pswd
+// console.log(pswd);
+  
+// let userDetails= this.database
+// if(acno in userDetails){
+// if(pswd==userDetails[acno]['password']){
+//    alert('Login succesfully')
+// }
+// else{
+//   alert('Incorrect password')
+// }
+
+// }
+
+
+// else{
+//   alert('user does not exist')
+// }
+
+// }
+
+//template referencing variable
+login(a:any,p:any){
+  console.log(a);
+  
   
   //fetch acno
-  var acno = this.acno
+  var acno = a.value
   console.log(acno);
-var pswd=this.pswd
+var pswd=p.value
 console.log(pswd);
   
 let userDetails= this.database
@@ -66,6 +95,5 @@ else{
 }
 
 }
-
 
 }
